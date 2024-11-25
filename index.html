@@ -117,5 +117,20 @@
             </div>
         </section>
     </div>
+    <audio src="MyLoveWestlife.mp3" id="music"></audio>
 </body>
+
+<script>
+    const btnBukaUndangan = document.getElementById("btnBukaUndangan"); // deklarasi untuk tombol btnBukaUndangan
+    const isiUndangan = document.getElementById("isiUndangan") // deklarasi untuk id isiUndangan
+    const musik = document.getElementById("music")
+
+   // fungsi untuk tombol buka undangan 
+    btnBukaUndangan.addEventListener("click", function() {
+        isiUndangan.classList.toggle("hidden") // Akan membuka isi undangan
+        musik.play();
+    });
+
+</script>
+
 </html>
